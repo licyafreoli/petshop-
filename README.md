@@ -1,4 +1,4 @@
-# Hotsite para Petshop "Melhor Amigo"
+# 🐾 Hotsite para Petshop "Melhor Amigo"
 
 ## Briefing do Projeto
 
