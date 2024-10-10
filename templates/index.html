@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Melhor Amigo - Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo ao Petshop Melhor Amigo!</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/products">Produtos</a>
+            <a href="/gallery">Galeria</a>
+            <a href="/contact">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>“No Petshop 'Melhor Amigo', nós entendemos que seu animal de estimação é mais do que apenas um bichinho, é
+            um membro especial da sua família.”</h2>
+        <p>Com uma equipe dedicada e apaixonada por animais, nossos profissionais treinados estão prontos para oferecer
+            os melhores cuidados para o seu pet. Desde serviços de tosa profissional, onde deixaremos seu animalzinho
+            com um visual impecável, até a limpeza e higienização completa, proporcionamos um ambiente seguro e
+            tranquilo para que seu amigo se sinta confortável durante todo o processo.</p>
+
+            <div class="carousel-container">
+                <div class="carousel-slide" id="carousel-slide">
+                    <img src="{{ url_for('static', filename='images/dog7.jpg') }}" alt="Imagem 1 - Cuidado com o pet">
+                    <img src="{{ url_for('static', filename='images/gatobanho.jpg') }}" alt="Imagem 2 - Cuidado com o pet">
+                    <img src="{{ url_for('static', filename='images/dog8.jpg') }}" alt="Imagem 3 - Higienização do pet">
+                    <img src="{{ url_for('static', filename='images/dogbanho.jpg') }}" alt="Imagem 4 - Higienização do pet">
+                    <img src="{{ url_for('static', filename='images/pets.jpg') }}" alt="Imagem 4 - Higienização do pet">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            
+
+        <h2>“Sabemos que a alimentação é fundamental para a saúde do seu pet.”</h2>
+        <p>Por isso oferecemos uma ampla variedade de rações de alta qualidade e alimentos balanceados, adaptados às
+            necessidades individuais de cada animal. Nossos especialistas estão disponíveis para fornecer orientação
+            personalizada e ajudá-lo a escolher a melhor opção para o seu amiguinho.</p>
+            <a href="/products" class="cta-button">Veja Nossos Produtos</a>
+
+        <h2>“No Petshop 'Melhor Amigo', também acreditamos na importância da socialização e diversão para o bem-estar
+            dos animais.”</h2>
+        <p>Oferecemos momentos especiais de brincadeiras e interação em nosso espaço dedicado, garantindo que seu pet se
+            divirta e faça novos amigos. Além disso, temos uma ampla variedade de brinquedos e acessórios para
+            enriquecer a vida do seu animalzinho.</p>
+
+        <a href="/products" class="cta-button">Veja Nossos Produtos</a>
+
+        <h2>“Nossa galeria de fotos é o reflexo do nosso amor e cuidado pelos animais.”</h2>
+        <p>Você poderá ver alguns dos adoráveis clientes que já passaram pelo nosso petshop. É um verdadeiro prazer
+            atender a cada um deles e contribuir para o seu bem-estar e felicidade.</p>
+        <a href="/gallery" class="cta-button">Veja nossa galeria</a>
+
+        <h2>“Estamos ansiosos para conhecê-lo e ao seu melhor amigo!”</h2>
+        <p>Visite-nos no Petshop 'Melhor Amigo' e descubra a diferença que fazemos na vida dos animais de estimação.
+            Entre em contato conosco por telefone, e-mail ou através do nosso formulário de contato no nosso site. Seu
+            pet merece o melhor, e nós estamos aqui para fornecer exatamente isso.</p>
+
+        <div class="footer-contact">
+            <p>Se interessou? <a href="/contact">Entre em contato!</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Melhor Amigo Petshop - Direitos Reservados <a href="https://github.com/licyafreoli">Rossana Lícya</a></p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

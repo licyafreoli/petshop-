@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+    <title>Melhor Amigo - Produtos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nossos Produtos</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/products">Produtos</a>
+            <a href="/gallery">Galeria</a>
+            <a href="/contact">Contato</a>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="static/images/racoes-premium-especiais.jpg" alt="Ração Premium">
+            <div class="product-info">
+                <h3>Ração Premium</h3>
+                <p>No Petshop "Melhor Amigo", oferecemos uma seleção de rações premium para cães e gatos. Essas rações
+                    são formuladas com ingredientes de alta qualidade, garantindo uma nutrição balanceada e adequada
+                    para o seu pet. Temos opções para diferentes idades, raças e necessidades específicas,
+                    proporcionando uma dieta saudável e saborosa para o seu melhor amigo.</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="static/images/tosa.jpeg" alt="Serviço de Tosa">
+            <div class="product-info">
+                <h3>Serviço de Tosa Especializada</h3>
+                <p>Proporcionamos serviços profissionais de tosa para cães de todas as raças. Nossos tosadores
+                    experientes utilizam técnicas avançadas para garantir que seu pet tenha um visual impecável. Além de
+                    cortes de pelos personalizados, também realizamos higienização e cuidados especiais, como limpeza de
+                    ouvidos e corte de unhas, deixando seu cãozinho limpo e bem cuidado.</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="static/images/banho2.png" alt="Banho Relaxante">
+            <div class="product-info">
+                <h3>Banho Relaxante</h3>
+                <p>Oferecemos banhos relaxantes para cães e gatos. Utilizamos produtos de qualidade, seguros e adequados
+                    para cada tipo de pelagem, garantindo uma limpeza profunda e refrescante. Nossos profissionais
+                    carinhosos proporcionam um ambiente tranquilo e seguro para que seu pet desfrute de um banho
+                    agradável, deixando-o com uma pelagem macia e cheirosa.</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="static/images/brinquedos.jpg" alt="Brinquedos Interativos">
+            <div class="product-info">
+                <h3>Brinquedos Interativos</h3>
+                <p>Valorizamos o enriquecimento e a diversão dos animais, por isso oferecemos uma variedade de
+                    brinquedos interativos. Esses brinquedos estimulam a mente e o corpo do seu pet, promovendo o
+                    exercício físico e mental. Temos opções para cães e gatos de todos os tamanhos e idades, garantindo
+                    horas de entretenimento saudável.</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="static/images/produtos.jpg" alt="Produtos de Higiene">
+            <div class="product-info">
+                <h3>Produtos de Higiene e Cuidados</h3>
+                <p>Na nossa seleção de produtos, você encontrará itens de higiene e cuidados, como shampoos,
+                    condicionadores, escovas, pentes, produtos de limpeza auricular e ocular, além de acessórios
+                    essenciais como coleiras e guias. Tudo para manter seu pet limpo, confortável e bem cuidado.</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="static/images/animais.jpg" alt="Produtos Diversificados">
+            <div class="product-info">
+                <h3>E tem mais!</h3>
+                <p>Esses são apenas alguns dos produtos disponíveis no Petshop "Melhor Amigo". Temos um catálogo
+                    completo e diversificado, cuidadosamente selecionado para atender às necessidades dos animais de
+                    estimação. Nossa equipe terá prazer em orientá-lo e ajudá-lo a escolher os melhores produtos para o
+                    seu amiguinho de quatro patas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-contact">
+        <p> Se interessou? <a href="/contact">Entre em contato!</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Melhor Amigo Petshop - Direitos Reservados <a href="https://github.com/licyafreoli">Rossana Lícya</a></p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

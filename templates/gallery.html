@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gallery.css') }}">
+    <title>Melhor Amigo - Galeria</title>
+</head>
+<body>
+    <header>
+        <h1>Galeria do Petshop Melhor Amigo</h1>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/products">Produtos</a>
+            <a href="/gallery">Galeria</a>
+            <a href="/contact">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Veja alguns de nossos amigos peludos!</h2>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='images/dog1.webp') }}" alt="Cão feliz">
+            <img src="{{ url_for('static', filename='images/dog2.webp') }}" alt="Cão feliz">
+            <img src="{{ url_for('static', filename='images/dogspa.jpg') }}" alt="Gato Feliz">
+            <img src="{{ url_for('static', filename='images/dog3.jpeg') }}" alt="Gato feliz">
+            <img src="{{ url_for('static', filename='images/dog5.jpeg') }}" alt="Cão feliz">
+            <img src="{{ url_for('static', filename='images/gato2.jpg') }}" alt="Cão feliz">
+            <img src="{{ url_for('static', filename='images/dog4.jpeg') }}" alt="Cão feliz">
+            <img src="{{ url_for('static', filename='images/dog.jpg') }}" alt="Cão feliz">
+            <img src="{{ url_for('static', filename='images/dogs.jpg') }}" alt="Cão feliz">
+            <img src="{{ url_for('static', filename='images/pets.jpg') }}" alt="Cão feliz">
+            <img src="{{ url_for('static', filename='images/dog6.jpeg') }}" alt="Cão feliz">
+            <img src="{{ url_for('static', filename='images/gato1.jpg') }}" alt="Cão feliz">
+            <img src="{{ url_for('static', filename='images/gatobanho.webp') }}" alt="Gato feliz">
+        </div>
+    </div>
+
+    <div class="footer-contact">
+        <p>Se interessou? <a href="/contact">Entre em contato!</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Melhor Amigo Petshop - Direitos Reservados <a href="https://github.com/licyafreoli">Rossana Lícya</a></p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Contato - Melhor Amigo</title>
+</head>
+<body>
+    <header>
+        <h1>Contato - Melhor Amigo</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/products">Produtos</a>
+            <a href="/gallery">Galeria</a>
+            <a href="/contact">Contato</a>
+        </nav>
+    </header>
+    <div class="contact-info">
+        <p><strong>E-mail:</strong> contato@melhoramigopetshop.com.br</p>
+        <p><strong>Telefone:</strong> (11) 98765-4321</p>
+        <p><strong>Endereço:</strong> Rua dos Bichinhos, 123 - Bairro Animado, São Paulo - SP</p>
+    </div>
+    <div class="container">
+        <h2>Entre em Contato Conosco!</h2>
+        
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <div class="alert">
+              {{ messages[0] }}
+            </div>
+          {% endif %}
+        {% endwith %}
+        <br>
+        <br>
+            <main> 
+        <form action="{{ url_for('contact') }}" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 Melhor Amigo Petshop - Direitos Reservados <a href="https://github.com/licyafreoli">Rossana Lícya</a></p>
+</footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
